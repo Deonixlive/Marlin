@@ -1,24 +1,3 @@
-/**
- * Marlin 3D Printer Firmware
- * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
- *
- * Based on Sprinter and grbl.
- * Copyright (c) 2011 Camiel Gubbels / Erik van der Zalm
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- *
- */
 #pragma once
 
 #include "env_validate.h"
@@ -166,15 +145,16 @@
 #define TEMP_0_PIN                         P0_24
 #define TEMP_1_PIN                         P0_23
 //#define TEMP_2_PIN                       P1_30  // Onboard thermistor
+#define TEMP_CHAMBER_PIN                     P1_30
 #define TEMP_BED_PIN                       P0_25
 
 //
 // Heaters / Fans
 //
 #define HEATER_0_PIN                       P2_03  // EXTRUDER 0
-#define HEATER_1_PIN                       P2_04  // EXTRUDER 1
+//#define HEATER_1_PIN                       P2_04  // EXTRUDER 1
 #define HEATER_BED_PIN                     P2_05  // BED
-#define FAN_PIN                            P2_01
+#define FAN_PIN                           P2_01
 #define FAN1_PIN                           P2_02
 
 #ifndef CONTROLLER_FAN_PIN
@@ -283,3 +263,5 @@
 #elif SD_CONNECTION_IS(CUSTOM_CABLE)
   #error "SD CUSTOM_CABLE is not compatible with SKR E3 Turbo."
 #endif
+
+#define ON_BOARD_SPI_DEVICE                    1  // SPI1
