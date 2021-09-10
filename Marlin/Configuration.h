@@ -103,9 +103,11 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT 3
-//#define SERIAL_PORT_2 0
+#define SERIAL_PORT -1
+//#define SERIAL_PORT_2 
 
+//#define SERIAL_PORT 3 //known to work with ender 3 v2 display
+//#define SERIAL_PORT_2 -1
 /**
  * Serial Port Baud Rate
  * This is the default communication speed for all serial ports.
@@ -147,7 +149,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Ender-3V2"
+#define CUSTOM_MACHINE_NAME "DimePrint"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -2179,7 +2181,7 @@
 //  M300 S<frequency Hz> P<duration ms>
 //
 #define LCD_FEEDBACK_FREQUENCY_DURATION_MS 20
-#define LCD_FEEDBACK_FREQUENCY_HZ 1000
+#define LCD_FEEDBACK_FREQUENCY_HZ 800
 
 //=============================================================================
 //======================== LCD / Controller Selection =========================
