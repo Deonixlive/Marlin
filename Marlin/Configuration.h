@@ -103,8 +103,8 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7]
  */
-#define SERIAL_PORT -1
-#define SERIAL_PORT_2 0
+#define SERIAL_PORT 3
+//#define SERIAL_PORT_2 0
 
 /**
  * Serial Port Baud Rate
@@ -2076,7 +2076,7 @@
  *
  * :['JAPANESE', 'WESTERN', 'CYRILLIC']
  */
-#define DISPLAY_CHARSET_HD44780 JAPANESE
+#define DISPLAY_CHARSET_HD44780 WESTERN
 
 /**
  * Info Screen Style (0:Classic, 1:Průša)
